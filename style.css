@@ -1,6 +1,5 @@
 html {
     font-family: 'Tahoma';
-    background-image: url("/sal.jpg")
 }
 
 h1 {
@@ -9,6 +8,22 @@ h1 {
     color: black;
 }
 
-img {
-    border-radius: 25px
+.smoothcorner {
+    border-radius:25px;
 }
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #background_img {
+    display: block;
+    background: url(snowy_landscape.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-width: 100%;
+    min-height: 100%;
+    background-position: center;
+  }
