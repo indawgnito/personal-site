@@ -1,2 +1,2 @@
 # indawgnito.github.io
-site (changeme)
+This is my test site.
