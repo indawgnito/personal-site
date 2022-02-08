@@ -8,3 +8,7 @@ h1 {
     font-size: 40px;
     color: black;
 }
+
+img {
+    border-radius: 25px
+}
