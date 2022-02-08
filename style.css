@@ -1,10 +1,10 @@
 html {
-    font-family: Georgia;
-    background-image: linear-gradient(45deg, blue, aquamarine)
+    font-family: 'Tahoma';
+    background-image: url("/sal.jpg")
 }
 
 h1 {
-    background-color: white;
     text-align: center;
-    color: aquamarine;
+    font-size: 40px;
+    color: black;
 }
