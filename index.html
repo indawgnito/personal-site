@@ -2,18 +2,91 @@
 
 <html>
   <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="stylesheet.css" />
   </head>
   <body>
-    <nav>
-      <p class="myName">Benjamin Webb</p>
-      <ul>
-        <li class="currentPage">Home</li>
-        <li><a href="about.html">About me</a></li>
-        <li><a href="resume.html">Resume</a></li>
-      </ul>
-    </nav>
-    <main><p>test</p></main>
+    <!-- Navbar -->
+    <div class="top-bar">
+      <div class="top-bar-left">
+        <ul class="menu">
+          <li class="menu-text">YourSiteName</li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Resume</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- Navbar -->
+
+    <main>
+      <div class="off-canvas-wrapper">
+        <!-- Your menu or Off-canvas content goes here -->
+        <div class="off-canvas position-left" id="offCanvas" data-off-canvas>
+          <!-- Close button -->
+          <button
+            class="close-button"
+            aria-label="Close menu"
+            type="button"
+            data-close
+          >
+            <span aria-hidden="true">&times;</span>
+          </button>
+
+          <!-- Menu -->
+          <ul class="vertical menu">
+            <li><a href="#" class="menu-link">Home</a></li>
+            <li><a href="#" class="menu-link">Projects</a></li>
+            <li><a href="#" class="menu-link">Resume</a></li>
+          </ul>
+        </div>
+        <!-- Your page content lives here -->
+        <div class="off-canvas-content" data-off-canvas-content>
+          <!-- main content within a `grid-container` -->
+          <button type="button" class="openMenu" data-toggle="offCanvas">
+            Open Menu
+          </button>
+          <div class="grid-container">
+            <!-- `grid-x` represents a row -->
+            <div class="grid-x grid-padding-x">
+              <div
+                class="cell auto text-center my-name"
+                style="background-color: #ececec"
+              >
+                Benjamin Webb
+              </div>
+            </div>
+
+            <div class="grid-x grid-padding-x">
+              <div class="cell large-auto" style="background-color: #add8e6">
+                One
+              </div>
+              <div class="cell large-auto" style="background-color: #90ee90">
+                Two
+              </div>
+              <div class="cell large-auto" style="background-color: #add8e6">
+                Three
+              </div>
+              <div class="cell large-auto" style="background-color: #90ee90">
+                Four
+              </div>
+              <div class="cell large-auto" style="background-color: #add8e6">
+                Five
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- include before closing <body> tag -->
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script type="application/javascript">
+      $(document).foundation();
+    </script>
   </body>
 </html>

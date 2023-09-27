@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.menu-link {
+  text-decoration: none;
+  color: black;
+}
+
+.menu-link:hover {
+}
+
+.my-name {
+  padding: 1rem;
+}
+
+.openMenu {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  font-size: 0.9rem;
+  background-color: white;
+  padding: 0.3rem;
+  border-radius: 0.3rem;
+}
