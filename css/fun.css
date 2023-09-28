@@ -7,3 +7,9 @@ main {
 p {
   text-align: center;
 }
+
+img {
+  border-radius: 1rem;
+  box-shadow: 0 0 1rem gray;
+  margin: 2rem 1rem;
+}
