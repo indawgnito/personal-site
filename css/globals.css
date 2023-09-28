@@ -47,3 +47,10 @@ main {
   margin: 0 auto;
   padding: 1rem;
 }
+
+hr {
+  width: 50%;
+  border: 2px solid lightgray;
+  border-radius: 1rem;
+  padding-top: 0.25rem;
+}
