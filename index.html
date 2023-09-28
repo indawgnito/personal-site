@@ -6,81 +6,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
     <link rel="stylesheet" href="css/foundation.css" />
-    <link rel="stylesheet" href="stylesheet.css" />
+    <link rel="stylesheet" href="css/globals.css" />
+    <link rel="stylesheet" href="css/index.css" />
   </head>
   <body>
     <!-- Navbar -->
-    <div class="top-bar">
+    <div class="top-bar show-for-medium">
       <div class="top-bar-left">
         <ul class="menu">
-          <li class="menu-text">YourSiteName</li>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Resume</a></li>
+          <li class="menu-text">Ben Webb</li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="fun.html">Fun</a></li>
         </ul>
       </div>
     </div>
     <!-- Navbar -->
 
-    <main>
-      <div class="off-canvas-wrapper">
-        <!-- Your menu or Off-canvas content goes here -->
-        <div class="off-canvas position-left" id="offCanvas" data-off-canvas>
-          <!-- Close button -->
-          <button
-            class="close-button"
-            aria-label="Close menu"
-            type="button"
-            data-close
-          >
-            <span aria-hidden="true">&times;</span>
-          </button>
+    <!-- Begin Off-canvas & Hamburger Menu -->
+    <div class="off-canvas-wrapper">
+      <div class="off-canvas position-left" id="offCanvas" data-off-canvas>
+        <!-- Close button -->
+        <button
+          class="close-button"
+          aria-label="Close menu"
+          type="button"
+          data-close
+        >
+          <span aria-hidden="true">&times;</span>
+        </button>
 
-          <!-- Menu -->
-          <ul class="vertical menu">
-            <li><a href="#" class="menu-link">Home</a></li>
-            <li><a href="#" class="menu-link">Projects</a></li>
-            <li><a href="#" class="menu-link">Resume</a></li>
-          </ul>
-        </div>
-        <!-- Your page content lives here -->
-        <div class="off-canvas-content" data-off-canvas-content>
-          <!-- main content within a `grid-container` -->
-          <button type="button" class="openMenu" data-toggle="offCanvas">
-            Open Menu
-          </button>
-          <div class="grid-container">
-            <!-- `grid-x` represents a row -->
-            <div class="grid-x grid-padding-x">
-              <div
-                class="cell auto text-center my-name"
-                style="background-color: #ececec"
-              >
-                Benjamin Webb
-              </div>
-            </div>
-
-            <div class="grid-x grid-padding-x">
-              <div class="cell large-auto" style="background-color: #add8e6">
-                One
-              </div>
-              <div class="cell large-auto" style="background-color: #90ee90">
-                Two
-              </div>
-              <div class="cell large-auto" style="background-color: #add8e6">
-                Three
-              </div>
-              <div class="cell large-auto" style="background-color: #90ee90">
-                Four
-              </div>
-              <div class="cell large-auto" style="background-color: #add8e6">
-                Five
-              </div>
-            </div>
-          </div>
-        </div>
+        <!-- Menu -->
+        <ul class="vertical menu">
+          <li><a href="index.html" class="menu-link">Home</a></li>
+          <li><a href="projects.html" class="menu-link">Projects</a></li>
+          <li><a href="resume.html" class="menu-link">Resume</a></li>
+          <li><a href="fun.html" class="menu-link">Fun</a></li>
+        </ul>
       </div>
-    </main>
+      <!-- Your page content lives here -->
+      <div class="off-canvas-content" data-off-canvas-content>
+        <!-- Hamburger Icon (Only shown on small screens) -->
+        <div
+          class="title-bar mobile-menu"
+          data-responsive-toggle="example-menu"
+          data-hide-for="medium"
+        >
+          <button
+            type="button"
+            data-toggle="offCanvas"
+            class="menu-icon"
+          ></button>
+          <div class="title-bar-title my-name-mobile">Ben Webb</div>
+        </div>
+
+        <!-- Rest of the content -->
+        <main>
+          <img class="headshot" src="./headshot.png" />
+          <hr class="cutacross" />
+          <p class="aboutme">
+            Hello! My name is Ben Webb and I am a Computer Science student from
+            St. Paul, MN, studying at the University of St. Thomas. I am
+            currently a senior and will be graduating in December 2025. My goal
+            after college is to fill a position as a software engineer with a
+            company whose values align with my own, while continuing to
+            contribute to my personal projects.
+          </p>
+        </main>
+      </div>
+    </div>
     <!-- include before closing <body> tag -->
     <script src="js/vendor/jquery.js"></script>
     <script src="js/vendor/what-input.js"></script>
